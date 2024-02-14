@@ -1,0 +1,6 @@
+if max({FIXED [Product Name] : sum([Profit])}) 
+= MAX([Sum profit from the most saled product])
+then max([Product Name]) END
+виводить найменування товару, що має найбільші продажі
+[Sum profit from the most saled product] = {include [Product Name] : sum([Profit])}.
+Чому include - бо [Sum profit from the most saled product] містилося в таблиці, що вже містила певні дані
